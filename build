@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t fredym/rails .
+docker push fredym/rails
