@@ -21,10 +21,10 @@ RUN dnf -y install \
       && \
     dnf -y clean all
 
-ENTRYPOINT ["rails"]
+CMD ["bash"]
 
 
-ONBUILD ENV APP_PATH /usr/src/app
+ONBUILD ENV APP_PATH /opt/app
 ONBUILD RUN mkdir -p $APP_PATH
 ONBUILD WORKDIR $APP_PATH
 
@@ -35,7 +35,7 @@ ONBUILD RUN bundle install --local
 ONBUILD COPY . $APP_PATH
 
 ONBUILD EXPOSE 3000
-ONBUILD CMD ["server", "-b", "0.0.0.0"]
+ONBUILD CMD ["rails", "server", "-b", "0.0.0.0"]
 
 
 # References and credits
