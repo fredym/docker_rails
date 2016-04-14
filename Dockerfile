@@ -18,6 +18,8 @@ RUN dnf -y install \
       rubygem-spring \
       rubygem-byebug \
       rubygem-web-console \
+      rubygem-haml \
+      rubygem-haml-rails \
       && \
     dnf -y clean all
 
