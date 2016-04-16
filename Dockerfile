@@ -18,12 +18,12 @@ RUN dnf -y install \
       rubygem-spring \
       rubygem-byebug \
       rubygem-web-console \
-      rubygem-haml-rails \
-      rubygem-bootstrap-sass \
-      rubygem-font-awesome-rails \
       && \
     dnf -y clean all && \
     gem install --no-document \
+      haml-rails \
+      bootstrap-sass \
+      font-awesome-rails \
       font-ionicons-rails \
       fastclick-rails \
       jquery-slimscroll-rails
