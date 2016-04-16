@@ -23,7 +23,9 @@ RUN dnf -y install \
       rubygem-font-awesome-rails \
       && \
     dnf -y clean all && \
-    gem install font-ionicons-rails
+    gem install \
+      font-ionicons-rails \
+      fastclick-rails \
 
 CMD ["bash"]
 
