@@ -22,7 +22,8 @@ RUN dnf -y install \
       rubygem-bootstrap-sass \
       rubygem-font-awesome-rails \
       && \
-    dnf -y clean all
+    dnf -y clean all && \
+    gem install font-ionicons-rails
 
 CMD ["bash"]
 
