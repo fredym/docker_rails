@@ -26,6 +26,7 @@ RUN dnf -y install \
     gem install \
       font-ionicons-rails \
       fastclick-rails \
+      jquery-slimscroll-rails \
 
 CMD ["bash"]
 
