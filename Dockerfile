@@ -23,7 +23,7 @@ RUN dnf -y install \
       rubygem-font-awesome-rails \
       && \
     dnf -y clean all && \
-    gem install \
+    gem install --no-document \
       font-ionicons-rails \
       fastclick-rails \
       jquery-slimscroll-rails
