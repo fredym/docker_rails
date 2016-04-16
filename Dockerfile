@@ -20,6 +20,7 @@ RUN dnf -y install \
       rubygem-web-console \
       rubygem-haml-rails \
       rubygem-bootstrap-sass \
+      rubygem-font-awesome-rails \
       && \
     dnf -y clean all
 
