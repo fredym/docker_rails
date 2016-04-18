@@ -26,7 +26,7 @@ RUN dnf -y install \
       font-awesome-rails \
       font-ionicons-rails \
       fastclick-rails \
-      jquery-slimscroll-rails
+    && :
 
 CMD ["bash"]
 
