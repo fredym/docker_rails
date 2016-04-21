@@ -44,11 +44,3 @@ ONBUILD COPY . $APP_PATH
 
 ONBUILD EXPOSE 3000
 ONBUILD CMD ["rails", "server", "-b", "0.0.0.0"]
-
-
-# References and credits
-# ----------------------
-# https://developer.fedoraproject.org/tech/languages/ruby/ror-installation.html
-# https://fedoraproject.org/wiki/Changes/Ruby_on_Rails_4.2
-# https://fedoraproject.org/wiki/Ruby_SIG
-# https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile
