@@ -27,6 +27,7 @@ RUN dnf -y install \
       font-ionicons-rails \
       fastclick-rails \
       jquery-datatables-rails \
+      select2-rails \
     && :
 
 CMD ["bash"]
