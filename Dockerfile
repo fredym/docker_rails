@@ -28,6 +28,7 @@ RUN dnf -y install \
       fastclick-rails \
       jquery-datatables-rails \
       select2-rails \
+      bootstrap-datepicker-rails \
     && :
 
 CMD ["bash"]
