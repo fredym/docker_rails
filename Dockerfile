@@ -29,6 +29,7 @@ RUN dnf -y install \
       jquery-datatables-rails \
       select2-rails \
       bootstrap-datepicker-rails \
+      jquery-ui-rails \
     && :
 
 CMD ["bash"]
