@@ -31,6 +31,7 @@ RUN gem install --no-document \
       select2-rails \
       bootstrap-datepicker-rails \
       jquery-ui-rails \
+      bootstrap-wysihtml5-rails \
       && :
 
 CMD ["bash"]
