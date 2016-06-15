@@ -19,8 +19,9 @@ RUN dnf -y install \
       rubygem-byebug \
       rubygem-web-console \
       && \
-    dnf -y clean all && \
-    gem install --no-document \
+    dnf -y clean all
+
+RUN gem install --no-document \
       haml-rails \
       bootstrap-sass \
       font-awesome-rails \
@@ -30,7 +31,7 @@ RUN dnf -y install \
       select2-rails \
       bootstrap-datepicker-rails \
       jquery-ui-rails \
-    && :
+      && :
 
 CMD ["bash"]
 
