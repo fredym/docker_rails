@@ -33,6 +33,7 @@ RUN gem install --no-document \
       jquery-ui-rails \
       bootstrap-wysihtml5-rails \
       momentjs-rails \
+      bootstrap-daterangepicker-rails \
       && :
 
 CMD ["bash"]
