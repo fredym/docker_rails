@@ -11,7 +11,9 @@ https://developer.fedoraproject.org/tech/languages/ruby/ror-installation.html
 https://fedoraproject.org/wiki/Changes/Ruby_on_Rails_4.2
 https://fedoraproject.org/wiki/Ruby_SIG
 http://www.isitfedoraruby.com
-https://github.com/docker-library/rails/blob/9df9b5e6b1519faf22e1565c2caaebf7cc1c665b/onbuild/Dockerfile
+https://github.com/docker-library/rails
+https://jbhannah.net/articles/rails-development-with-docker/
+https://github.com/CenturyLinkLabs/alpine-rails
 
 
 
