@@ -7,6 +7,7 @@ RUN \
   # Install Alpine packages
   apk add --no-cache \
     build-base \
+    sqlite \
     ruby-dev \
     ruby-rails4.2 \
     ruby-jquery-rails4.2 \
