@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bigdecimal'
 gem 'bootstrap-datepicker-rails'
 gem 'bootstrap-daterangepicker-rails'
 gem 'bootstrap-sass'
