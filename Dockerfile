@@ -21,17 +21,17 @@ RUN \
   bundle install --no-cache && \
 
   # Remove dev packages
-  apk del \
-    build-base \
-    sqlite-dev \
-    libxml2-dev \
-    libxslt-dev \
-    && \
+  # apk del \
+  #   build-base \
+  #   sqlite-dev \
+  #   libxml2-dev \
+  #   libxslt-dev \
+  #   && \
 
   # Cleanup
   gem cleanup && \
   rm -rf \
-    Gemfile* \
+    # Gemfile* \
     /usr/lib/ruby/gems/*/cache/* \
     && \
 
