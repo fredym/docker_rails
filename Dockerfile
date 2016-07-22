@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM ruby:2-alpine
 
 MAINTAINER Fredy Muñoz <fredy@munoz.im>
 
@@ -8,14 +8,13 @@ RUN \
 
   # Install Alpine packages
   apk add --no-cache \
-    ruby-rails4.2 \
-    ruby-io-console \
-    ruby-sqlite \
-    ruby-irb \
     sqlite \
     nodejs \
+    tzdata \
     build-base \
-    ruby-dev \
+    sqlite-dev \
+    libxml2-dev \
+    libxslt-dev \
     && \
 
   # Install gems specified in the provided Gemfile
@@ -24,7 +23,9 @@ RUN \
   # Remove dev packages
   apk del \
     build-base \
-    ruby-dev \
+    sqlite-dev \
+    libxml2-dev \
+    libxslt-dev \
     && \
 
   # Cleanup
