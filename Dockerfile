@@ -2,43 +2,23 @@ FROM alpine:3.3
 
 MAINTAINER Fredy Muñoz <fredy@munoz.im>
 
+COPY . .
+
 RUN \
 
   # Install Alpine packages
   apk add --no-cache \
-    build-base \
-    sqlite \
-    ruby-dev \
     ruby-rails4.2 \
-    ruby-jquery-rails4.2 \
+    ruby-io-console \
     ruby-sqlite \
+    sqlite \
+    nodejs \
+    build-base \
+    ruby-dev \
     && \
 
-  # Install gems
-  gem install --no-document \
-    coffee-rails \
-    sass-rails \
-    uglifier \
-    turbolinks \
-    jbuilder \
-    therubyracer \
-    sdoc \
-    spring \
-    byebug \
-    web-console \
-    haml-rails \
-    bootstrap-sass \
-    font-awesome-rails \
-    font-ionicons-rails \
-    fastclick-rails \
-    jquery-datatables-rails \
-    select2-rails \
-    bootstrap-datepicker-rails \
-    jquery-ui-rails \
-    bootstrap-wysihtml5-rails \
-    momentjs-rails \
-    bootstrap-daterangepicker-rails \
-    && \
+  # Install gems specified in the provided Gemfile
+  bundle install --no-cache && \
 
   # Remove dev packages
   apk del \
@@ -47,13 +27,13 @@ RUN \
     && \
 
   # Cleanup
+  gem cleanup && \
   rm -rf \
-    /var/cache/apk/* \
+    Gemfile* \
     /usr/lib/ruby/gems/*/cache/* \
-    ~/.gem \
     && \
 
-  :
+: # END RUN
 
 CMD ["sh"]
 
