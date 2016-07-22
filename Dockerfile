@@ -11,6 +11,7 @@ RUN \
     ruby-rails4.2 \
     ruby-io-console \
     ruby-sqlite \
+    ruby-irb \
     sqlite \
     nodejs \
     build-base \
