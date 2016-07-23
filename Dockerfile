@@ -21,21 +21,6 @@ RUN dnf -y install \
       && \
     dnf -y clean all
 
-RUN gem install --no-document \
-      haml-rails \
-      bootstrap-sass \
-      font-awesome-rails \
-      font-ionicons-rails \
-      fastclick-rails \
-      jquery-datatables-rails \
-      select2-rails \
-      bootstrap-datepicker-rails \
-      jquery-ui-rails \
-      bootstrap-wysihtml5-rails \
-      momentjs-rails \
-      bootstrap-daterangepicker-rails \
-      && :
-
 CMD ["bash"]
 
 
