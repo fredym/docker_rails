@@ -30,7 +30,7 @@ ONBUILD WORKDIR $APP_PATH
 
 ONBUILD COPY Gemfile $APP_PATH
 ONBUILD COPY Gemfile.lock $APP_PATH
-ONBUILD RUN bundle install --local
+ONBUILD RUN bundle install
 
 ONBUILD COPY . $APP_PATH
 
