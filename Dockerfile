@@ -1,4 +1,4 @@
-FROM fedora
+FROM fedora:24
 
 MAINTAINER Fredy Muñoz <fredy@munoz.im>
 
