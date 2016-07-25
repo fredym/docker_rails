@@ -35,4 +35,4 @@ ONBUILD RUN bundle install
 ONBUILD COPY . $APP_PATH
 
 ONBUILD EXPOSE 3000
-ONBUILD CMD ["rails", "server", "-b", "0.0.0.0"]
+ONBUILD CMD ["bin/rails", "server", "-b", "0.0.0.0"]
