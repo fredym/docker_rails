@@ -21,7 +21,7 @@ RUN dnf -y install \
       && \
     dnf -y clean all
 
-CMD ["bash"]
+CMD ["rails"]
 
 
 ONBUILD ENV APP_PATH /opt/app
