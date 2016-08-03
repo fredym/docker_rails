@@ -22,17 +22,3 @@ RUN dnf -y install \
     dnf -y clean all
 
 CMD ["rails"]
-
-
-ONBUILD ENV APP_PATH /opt/app
-ONBUILD RUN mkdir -p $APP_PATH
-ONBUILD WORKDIR $APP_PATH
-
-ONBUILD COPY Gemfile $APP_PATH
-ONBUILD COPY Gemfile.lock $APP_PATH
-ONBUILD RUN bundle install
-
-ONBUILD COPY . $APP_PATH
-
-ONBUILD EXPOSE 3000
-ONBUILD CMD ["bin/rails", "server", "-b", "0.0.0.0"]
