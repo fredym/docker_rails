@@ -5,11 +5,13 @@ MAINTAINER Fredy Muñoz <fredy@munoz.im>
 RUN dnf -y install \
       ruby \
       sqlite \
-      && \
-    dnf -y clean all
+    && dnf -y clean all
 
 RUN dnf -y install \
       rubygem-rails \
+    && dnf -y clean all
+
+RUN dnf -y install \
       rubygem-sqlite3 \
       rubygem-coffee-rails \
       rubygem-sass-rails \
@@ -22,7 +24,6 @@ RUN dnf -y install \
       rubygem-spring \
       rubygem-byebug \
       rubygem-web-console \
-      && \
-    dnf -y clean all
+    && dnf -y clean all
 
 CMD ["rails"]
