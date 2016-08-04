@@ -5,6 +5,10 @@ MAINTAINER Fredy Muñoz <fredy@munoz.im>
 RUN dnf -y install \
       ruby \
       sqlite \
+      && \
+    dnf -y clean all
+
+RUN dnf -y install \
       rubygem-rails \
       rubygem-sqlite3 \
       rubygem-coffee-rails \
