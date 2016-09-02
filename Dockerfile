@@ -24,6 +24,7 @@ RUN dnf -y install \
       rubygem-spring \
       rubygem-byebug \
       rubygem-web-console \
+      rubygem-bcrypt \
     && dnf -y clean all
 
 CMD ["rails"]
