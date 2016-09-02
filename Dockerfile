@@ -5,11 +5,13 @@ MAINTAINER Fredy Muñoz <fredy@munoz.im>
 RUN dnf -y install \
       ruby \
       sqlite \
-    && dnf -y clean all
+      && \
+    dnf -y clean all
 
 RUN dnf -y install \
       rubygem-rails \
-    && dnf -y clean all
+      && \
+    dnf -y clean all
 
 RUN dnf -y install \
       rubygem-sqlite3 \
@@ -25,6 +27,7 @@ RUN dnf -y install \
       rubygem-byebug \
       rubygem-web-console \
       rubygem-bcrypt \
-    && dnf -y clean all
+      && \
+    dnf -y clean all
 
 CMD ["rails"]
